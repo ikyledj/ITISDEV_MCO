@@ -29,14 +29,21 @@ This is the frontend repository for our **Hotel Reservation System** project. Th
 
 ## 🗂️ Folder Structure
 
-ITISDEV_MCO/
-│
-├── assets/             # Images, fonts, icons, etc.
-├── css/                # Stylesheets
-├── js/                 # JavaScript files
-├── pages/              # Individual webpage files (one per group member)
-├── index.html          # Main landing page
-└── README.md           # Project overview and instructions
+hotel-reservation-system/
+├── assets/
+│   ├── images/
+│   ├── icons/
+│   └── fonts/
+├── css/
+│   └── style.css
+├── js/
+│   └── main.js
+├── pages/
+│   ├── homepage.html
+│   ├── booking.html
+│   ├── rooms.html
+├── index.html
+└── README.md
 
 ---
 
