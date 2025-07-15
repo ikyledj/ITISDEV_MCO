@@ -58,7 +58,7 @@ hotel-reservation-system/
 
 ## 🔗 Figma Link
 
-> [Insert your Figma project link here]
+> https://github.com/ikyledj/ITISDEV_MCO)
 
 ---
 
