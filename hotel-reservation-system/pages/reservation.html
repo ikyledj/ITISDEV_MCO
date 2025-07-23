@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reservation Page</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Alice&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+</head>
+<body>
+    <!-- nav bar + room type -->
+    <header class="header">
+        <nav class="top-nav">
+            <div class="logo">
+                <div class="main-text">MARU'S</div>
+                <div class="subtexts">
+                    <div class="sub-text">Beachfront</div>
+                    <div class="sub-text">Rooms</div>
+                </div>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#facilities">Facilities</a></li>
+                <li><a href="#rooms">Rooms</a></li>
+                <li><a href="#contact">Contact-us</a></li>
+            </ul>
+        </nav>
+        <div class="hero-section">
+            <h1 class="hero-title">SINGLE ROOM</h1>
+        </div>
+    </header>
+
+    <!-- back button -->
+    <div class="back-button-container">
+        <button class="back-button" onclick="goBack()">
+            <div class="chevron-container">
+                <div class="chevron"></div>
+            </div>
+            <span class="back-text">BACK</span>
+        </button>
+    </div>
+
+    <!-- room content -->
+    <section class="booking-content">
+        <div class="room-container">
+            <div class="room-pic">
+                <div class="image-carousel">
+                    <img src="https://media.istockphoto.com/id/1467126728/photo/modern-scandinavian-and-japandi-style-bedroom-interior-design-with-bed-white-color-wooden.jpg?s=612x612&w=0&k=20&c=oa94MeFcLIs6l4hJQGztLbWe3BGOH9LtvLebnUXgUus=" alt="Single Room" style="width: 100%;" />
+                    <div class="carousel-dots">
+                        <div class="dot active"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                    </div>
+                </div>
+                <button class="amenities-button">
+                    <div class="amenities-icon">+</div>
+                    VIEW ROOM AMENITIES
+                </button>
+            </div>
+            <div class="room-info">
+                <h2>SINGLE ROOM</h2>
+                <h1>$147</h1>
+                <p>
+                    Beautifully designed space reflecting Asian refinement complemented by thoughtful provisions and exceptional panorama of Maru's Beachfront rooms - Single Room a perfect place to unwind.
+                </p>
+                <div class="booking-controls">
+                    <div class="date-range-picker" id="dateRangePicker">
+                        <span class="date-display" id="dateRangeDisplay">PICK DATE</span>
+                        <div class="date-range-inputs">
+                            <input type="date" id="checkin" aria-label="Check-in Date" />
+                            <input type="date" id="checkout" aria-label="Check-out Date" />
+                        </div>
+                    </div>
+
+                    <div class="room-guest-picker">
+                        <div class="picker-container">
+                            <span class="picker-floating-label">Pick Room and Guests</span>
+                            <div class="picker-btn" id="pickerButton">
+                                <span class="picker-icon">👥</span>
+                                <span class="picker-label" id="pickerText">1 room, 2 guests</span>
+                            </div>
+                        </div>
+
+                        <div class="picker-dropdown" id="dropdownMenu">
+                            <div class="picker-row">
+                                <label for="roomInput">Rooms:</label>
+                                <input type="number" id="roomInput" class="picker-input" min="1" value="1" />
+                            </div>
+                            <div class="picker-row">
+                                <label for="guestInput">Guests:</label>
+                                <input type="number" id="guestInput" class="picker-input" min="1" value="2" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="book-now-btn">BOOK NOW</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="main.js"></script>
+</body>
+</html>
