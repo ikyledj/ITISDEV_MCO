@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Alice&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --primary-color: #617c3c;
+  --primary-light-color: #819d12;
+  --secondary-color: #eceda2;
+  --accent-color: #e0b973;
+  --blue-color: #14274a;
+  --font-alice-sans: "Alice", serif;
+  --font-montserrat-sans: "Montserrat", sans-serif;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-primary: var(--primary-color);
+  --color-primary-light: var(--primary-light-color);
+  --color-secondary: var(--secondary-color);
+  --color-accent: var(--accent-color);
+  --color-blue: var(--blue-color);
+  --font-primary: var(--font-alice-sans);
+  --font-secondary: var(--font-montserrat-sans);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-montserrat-sans);
+}
+
+.nav-links::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background-color: var(--background);
+}
+.center {
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+footer::before {
+  content: "";
+  position: absolute;
+  top: -200px;
+  left: 50%;
+  transform: translateX(-50%);
+  clip-path: polygon(50% 60%, 0% 100%, 100% 100%);
+  width: 200px;
+  height: 200px;
+  background: var(--primary-color);
+  z-index: -1;
+}
+.dotdot .slick-dots {
+  top: 600px !important;
+}
+.slick-dots {
+  bottom: 50px !important;
+}
+.slick-dots li button:before {
+  border-radius: 50% !important;
+  border: 1px solid white !important;
+  font-size: 16px !important;
+  color: white !important;
+  opacity: 1;
+  z-index: 1000 !important;
+}
